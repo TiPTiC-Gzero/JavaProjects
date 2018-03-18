@@ -1,0 +1,135 @@
+
+.test{
+    margin: 0 5px;
+    color: #fff;
+    float: left;
+    border-radius: 3px;
+    text-align: left;
+    font-size: 12px;
+    padding: 0 20px;
+	height:42px;
+	line-height:42px;
+    width: 110px;
+	border:solid #FFF 1px;
+	overflow:hidden;
+	position:relative;
+	-webkit-transition:height .75s ease,background 1.75s ease;
+	-ms-transition:height .75s ease,background 1.75s ease;
+	-o-transition:height.75s ease,background 1.75s ease;
+	-moz-transition:height  .75s ease,background 1.75s ease;
+	transition:height .75s ease,background 1.75s ease;
+    z-index:999;
+	
+}
+.test:hover{
+	
+	height:235px;
+	background-color:#333;
+	}
+	
+	
+figure.effect-sarah {
+}
+
+figure.effect-sarah img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect-sarah:hover img {
+	opacity: 0.4;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah figcaption {
+	text-align: left;
+}
+
+figure.effect-sarah h2 {
+	position: relative;
+	overflow: hidden;
+	padding: 0.5em 0;
+}
+
+figure.effect-sarah h2::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect-sarah:hover h2::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-sarah p {
+	margin-top:-20px;
+	padding: 01em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect-sarah:hover p {
+	opacity: 1; 	
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+/* CSS Document */
+
+figure.sec：h2 {
+	margin: 0 5px;
+    color: #fff;
+    float: left;
+    border-radius: 3px;
+    text-align: left;
+    font-size: 12px;
+    padding: 0 20px;
+	height:42px;
+	line-height:42px;
+    width: 110px;
+    border: solid 	
+	overflow:hidden;
+	position:relative;
+	-webkit-transition:height .75s ease,background 1.75s ease;
+	-ms-transition:height .75s ease,background 1.75s ease;
+	-o-transition:height.75s ease,background 1.75s ease;
+	-moz-transition:height  .75s ease,background 1.75s ease;
+	transition:height .75s ease,background 1.75s ease;
+    z-index:999;
+	}
+	figure.sec:hover h2{
+		height:235px;
+	background-color:#333;
+	}
+	figure.sec p{
+		margin-top:-20px;
+	padding: 01em 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+		}
+		figure.sec:hover p {
+	opacity: 1; 	
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}

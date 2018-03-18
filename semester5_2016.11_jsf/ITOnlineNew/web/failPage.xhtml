@@ -1,0 +1,208 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      >
+    <h:head>
+        <title>Loging</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 		
+              Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <link href="css/style.css" rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" href="css/jquery.countdown.css" />
+        <link href='http://fonts.useso.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'/>
+
+        <link href="css/font-awesome.css" rel="stylesheet"></link> 
+
+        <script>
+            $(document).ready(function () {
+                $(".dropdown").hover(
+                        function () {
+                            $('.dropdown-menu', this).stop(true, true).slideDown("fast");
+                            $(this).toggleClass('open');
+                        },
+                        function () {
+                            $('.dropdown-menu', this).stop(true, true).slideUp("fast");
+                            $(this).toggleClass('open');
+                        }
+                );
+            });
+        </script>
+        <style>
+            .resetbtn{
+                background-color: #660000 ;
+            }
+            .resetbtn:hover{
+                background-color:   #660000 !important;
+                -webkit-transition: background-color;
+        </style>
+    </h:head>
+    <h:body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html">LearningLight.org</a>
+                </div>
+                <!--/.navbar-header-->
+                <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="login.xhtml"><i class="fa fa-user"></i><span>Login</span></a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Courses</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="courses.html">Courses Categories</a></li>
+
+                                <li><a href="course_detail.html">Courses detail</a></li>
+                            </ul>
+                        </li>
+                       
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>Video</span></a>
+
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>
+                            <ul class="dropdown-menu search-form">
+                                <form>        
+                                    <input type="text" class="search-text" name="s" placeholder="Search..."/>    
+                                    <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <!--/.navbar-collapse-->
+        </nav>
+        <nav class="navbar nav_bottom" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header nav_2">
+                    <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"></a>
+                </div> 
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+                    <ul class="nav navbar-nav nav_1">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li class="dropdown mega-dropdown active">
+
+                            <div class="dropdown-menu mega-dropdown-menu">
+                                <div class="container-fluid">
+                                    <!-- Tab panes -->
+
+                                </div>
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active"><a href="#men" role="tab" data-toggle="tab">School</a></li>
+                                    <li><a href="#women" role="tab" data-toggle="tab">College</a></li>
+                                </ul>                    
+                            </div>				
+                        </li>
+                       
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+
+                                <li><a href="shortcodes.html">Shortcodes</a></li>
+
+                            </ul>
+                        </li>
+
+
+                      
+
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+        </nav>
+        <!-- banner -->
+        <div class="courses_banner">
+            <div class="container">
+                <h3 style="text-transform: inherit !important;">login</h3>
+                <p class="description">
+                   Are you wanna to Login?
+                </p>
+                <div class="breadcrumb1">
+                    <ul>
+                        <li class="icon6"><a href="index.html">Home</a></li>
+                        <li class="current-page">Login</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- //banner -->
+        <div class="courses_box1">
+            <div class="container">
+                <h:form class="login">
+                    <p class="lead" style="color: #cc3300">Login Failed</p>
+                     <br/>
+                    <center><img src="images/atten.png" style="border-style:outset; height: 200px;width: 200px; border-width:200px; border-width:thin; border-radius:180px;" class="img-responsive" alt=""/>
+                    </center>
+                    
+                   <br/>
+                    <br/>
+                    <p> <a href="login.xhtml" style=" font-size: 24px;">Try to Login again</a></p>
+                </h:form>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="col-md-3 grid_4" style="width:50% !important;">
+                    <h3>About Us</h3>	
+                    <p>"Learninglight Virtual Academy was founded in 2008 for providing online IT training in China. To address the requirements Learninglight tied up with ZynlaCom, a Shenzhen based S/W development firm to develop the online tutorial System..."</p>
+                    <ul class="social-nav icons_2 clearfix">
+                        <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 grid_4" style="width:50% !important;">
+                    <h3>Contact Us</h3>
+                    <address>
+                        <strong>Contrary to popular belief</strong>
+                        <br/>
+                        <span>It is a long established</span>
+                        <br/><br/>
+                        <span>Contrary to popular </span>
+                        <br/>
+                        <abbr>Telephone : </abbr> +(0539) 123-456-7
+                        <br/>
+                        <abbr>Email : </abbr> <a href="mailto@example.com">LearningLight@edu.com</a>
+                    </address>
+                </div>
+
+                <div class="clearfix"> </div>
+                <div class="copy">
+                    <p>Copyright &copy; 2017.</p><h1>LightingLight</h1><p> All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </h:body>
+</html>
+

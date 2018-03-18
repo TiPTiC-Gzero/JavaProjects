@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+  
+    <meta name="description" content="百度移动统计是一款专业免费的移动应用统计分析工具，支持android，ios平台。" />
+    <meta name="keywords" content="百度移动统计;移动应用统计;移动APP统计;Android统计;iOS统计;iphone统计" />
+    <meta name="baidu-site-verification" content="3rIfga2d3O">
+    
+    <link href="/web/css/login_layout.css?__v=20160621102608" rel="stylesheet" type="text/css" />
+    <link href="/web/css/login.css?__v=20160621102608" rel="stylesheet" type="text/css" />
+
+    <script>var _hmt = _hmt || [];(function() {var hm = document.createElement("script");
+hm.src = "//hm.baidu.com/hm.js?767db4ee1769de108fba6ac84b763cf3";
+var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();</script>
+</head>
+<body>
+    <!-- htmlcs-disable indent-char -->
+    <div class="header">
+        <div class="header-top">
+            <h1 class="logo l">
+                <a href="//mtj.baidu.com">百度移动统计</a>
+            </h1>
+            <div class="header-right r">
+                <ul class="header-top-nav l">
+                    <li>
+                        <a href="//mtj.baidu.com" target="_blank">移动统计</a>
+                    </li>
+                    <li>
+                        <a href="/web/game" target="_blank">游戏统计</a>
+                    </li>
+                    <li>
+                        <a href="http://tongji.baidu.com/data/mobile/brand" target="_blank">流量研究院</a>
+                    </li>
+                    <li>
+                        <a href="/web/welcome/whitepaper" target="_blank">白皮书</a>
+                    </li>
+                    <li>
+                        <a href="/web/sdk/index" target="_blank">SDK下载</a>
+                    </li>
+                    <li>
+                        <a href="/web/welcome/appdownload" target="_blank">手机客户端</a>
+                    </li>
+                    <li>
+                        <a href="/web/help/index" target="_blank">服务中心</a>
+                    </li>
+                </ul>
+                <div class="header-top-login r">
+                    <a href="https://passport.baidu.com/v2/?reg&tpl=holmes_maa&u=https://mtj.baidu.com/web/welcome/psp" class="opacity-btn header-btn-border btn-register">注册</a>
+                    <a href="javascript:void(0);" class="opacity-btn header-btn btn-login" id="btn-login">登录</a>
+                </div>
+                <div class="login-info-header r hidden">
+                    <label class="login-user" title=""></label>
+                    <a id="logout" href="/web/welcome/logout?subPath=" class="r tac">退出</a>
+                </div>
+            </div>
+        </div>
+        
+<div class="header-banner-container">
+    <div id="header-banner">
+        <ul>
+            <li class="video-li">
+                <video id="mtj-video" data-src="/web/video/mtj.mp4" src="" poster="/web/css/images/banner.jpg" preload="auto" autoplay loop>
+                   
+                </video>
+                <div class="mtj-info">
+                    <h2>高效、专业的移动应用统计工具</h2>
+                    <p>追踪渠道流量来源、分析受众行为数据，服务产品优化、助力运营推广</p>
+                    <div class="header-btns clearfix">
+                        <a href="javascript:void(0);" class="header-btn header-use-btn" id="header-use">免费使用</a>
+                        <a href="/web/welcome/ico?key=3b36a00b84" class="opacity-btn header-btn-border header-demo-btn">查看演示</a>
+                    </div>
+                </div>
+                <div class="header-mask"></div>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+    </div>
+    
+<div id="gg-list-wrapper" class="tac">
+    <ul>
+                <li class="gg-display-item"><a href="http://tieba.baidu.com/p/4588082844" title="移动统计最新SDK安全再升级" target="_blank"><img class="gg-display-image" src="/static/carousel/7fc0fb1c-f7b0-4295-8e83-55f1c750a621.jpg" alt="移动统计最新SDK安全再升级"></a></li>
+                <li class="gg-display-item"><a href="https://mtj.baidu.com/web/sdk/index" title="移动统计SDK体积小能量大" target="_blank"><img class="gg-display-image" src="/static/carousel/85e5333e-79b4-4fe5-8b5c-9d4c84b9c688.jpg" alt="移动统计SDK体积小能量大"></a></li>
+                <li class="gg-display-item"><a href="http://datamart.baidu.com/datax-web" title="用户画像洞察用户需求，助力商业决策" target="_blank"><img class="gg-display-image" src="/static/carousel/3bc3bd26-f4e3-4c9d-a391-3201c077cc3e.jpg" alt="用户画像洞察用户需求，助力商业决策"></a></li>
+            </ul>
+</div>
+<div class="products" id="products">
+    <div class="product product-standard">
+        <div class="wrapper">
+            <div class="product-desc l">
+                <h2>应用统计分析</h2>
+                <div class="desc-item">
+                    <div class="desc-item-img">
+                        <i class="icon flow-icon"></i>
+                    </div>
+                    <div class="desc-item-text">
+                        <h3>流量来源</h3>
+                        <p>渠道流量对比、细分渠道分析，准确监控不同推广位数据，实时获知渠道贡献。</p>
+                    </div>
+                </div>
+                <div class="desc-item">
+                    <div class="desc-item-img">
+                        <i class="icon audiences-icon"></i>
+                    </div>
+                    <div class="desc-item-text">
+                        <h3>受众洞察</h3>
+                        <p>基于百度的海量数据积累，多维度分析并呈现用户画像信息。</p>
+                    </div>
+                </div>
+                <div class="desc-item">
+                    <div class="desc-item-img">
+                        <i class="icon device-icon"></i>
+                    </div>
+                    <div class="desc-item-text">
+                        <h3>终端分析</h3>
+                        <p>设备分布一目了然（设备型号、品牌、操作系统、分辨率、联网方式、运营商等）。</p>
+                    </div>
+                </div>
+                <div class="desc-btns">
+                    <a href="/web/sdk/index" class="product-btn btn-standard-sdk" id="sdkInfo" target="_blank">SDK下载</a>
+                    <a href="/web/welcome/ico?key=3b36a00b84" class="product-btn-border btn-standard-demo">查看演示</a>
+                </div>
+            </div>
+            <div class="product-img r">
+                <span>
+                    <img data-src="/web/css/images/standard-img.gif" src="/web/css/decorator/loading.gif" alt="应用统计分析">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="product product-game">
+        <div class="wrapper">
+            <div class="product-desc r">
+                <h2>游戏统计分析</h2>
+                <div class="desc-item">
+                    <div class="desc-item-img">
+                        <i class="icon payment-icon"></i>
+                    </div>
+                    <div class="desc-item-text">
+                        <h3>付费分析</h3>
+                        <p>追踪用户付费行为，实时呈现付费趋势、付费排名数据，协助挖掘鲸鱼用户。</p>
+                    </div>
+                </div>
+                <div class="desc-item">
+                    <div class="desc-item-img">
+                        <i class="icon currency-icon"></i>
+                    </div>
+                    <div class="desc-item-text">
+                        <h3>虚拟币消耗</h3>
+                        <p>实时获知游戏中虚拟币的交易情况，查看虚拟币消耗、币排名结果，设计充值玩法，定制开服策略。</p>
+                    </div>
+                </div>
+                <div class="desc-item">
+                    <div class="desc-item-img">
+                        <i class="icon design-icon"></i>
+                    </div>
+                    <div class="desc-item-text">
+                        <h3>游戏设计分析</h3>
+                        <p>分析关卡通过、停滞情况，细分并展示每个关卡任务的进入、失败、平均完成时间等指标结果。</p>
+                    </div>
+                </div>
+                <div class="desc-btns">
+                    <a href="/web/sdk/index" class="product-btn btn-game-sdk" id="sdkGameInfo" target="_blank">SDK下载</a>
+                    <a href="/web/welcome/ico?key=0795459a2e" class="product-btn-border btn-game-demo">查看演示</a>
+                </div>
+            </div>
+            <div class="product-img l">
+                <span>
+                    <img data-src="/web/css/images/game-img.gif" src="/web/css/decorator/loading.gif" alt="游戏统计分析">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="product product-market">
+        <div class="wrapper">
+            <div class="product-desc l">
+                <h2>广告营销分析</h2>
+                <div class="desc-item">
+                    <div class="desc-item-img">
+                        <i class="icon ad-flow-icon"></i>
+                    </div>
+                    <div class="desc-item-text">
+                        <h3>流量监控</h3>
+                        <p>首次发布广告变现功能，实时监控对比各广告位流量贡献，协助评估流量价值。</p>
+                    </div>
+                </div>
+                <div class="desc-item">
+                    <div class="desc-item-img">
+                        <i class="icon effect-icon"></i>
+                    </div>
+                    <div class="desc-item-text">
+                        <h3>营销效果评估</h3>
+                        <p>结合百度广告体系，准确统计并分析广告投放效果，助力提升广告收益。</p>
+                    </div>
+                </div>
+                <div class="desc-btns">
+                    <a class="product-btn btn-adtrack-sdk" id="guanggao-sdk-info" href="/web/sdk/index" target="_blank">SDK下载</a>
+                    <a href="/web/welcome/ico?key=8943609f98" class="product-btn-border btn-adtrack-demo">查看演示</a>
+                </div>
+            </div>
+            <div class="product-img r">
+                <span>
+                    <img data-src="/web/css/images/ad-img.gif" src="/web/css/decorator/loading.gif" alt=" 广告营销分析">
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="customer" id="customer">
+    <h3>百度移动统计已经帮助过20000+的应用，优化它们的产品设计和运营</h3>
+    <div id="customer-slider">
+        <ul>
+            <li>
+                <img src="/web/css/images/customer-2.png" alt="客户名称" width="86" height="86">
+                <div class="customer-info-container">
+                    <p class="customer-info">
+                        移动统计的用户细分功能给我们带来了很大的帮助，我们可以定位这些强交友目的的人群，研究他们的用户行为，不断研发和优化新的产品，以保持产品的行业和市场地位。
+                        <span class="customer-name">世纪佳缘 商务总监</span>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="/web/css/images/customer-1.png" alt="客户名称" width="86" height="86">
+                <div class="customer-info-container">
+                    <p class="customer-info">
+                        使用了百度移动统计之后，我们更加真实地掌握了用户的行为，与用户有了更为紧密的联系。
+                        <span class="customer-name">轻笔记 市场总监</span>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <ul class="customer-list" id="customer-list">
+        <li>
+            <img data-src="/web/css/images/customer-baidu.png" src="" title="百度搜索" alt="百度搜索" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-mi.png" src="" title="小米商城" alt="小米商城" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-iqiyi.png" src="" title="爱奇艺" alt="爱奇艺" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-htsec.png" src="" title="e海财通" alt="e海财通" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-ami.png" src="" title="Ami天气" alt="Ami天气" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-easou.png" src="" title="宜搜小说" alt="宜搜小说" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-nuomi.png" src="" title="百度糯米" alt="百度糯米" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-baiduyun.png" src="" title="百度云" alt="百度云" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-fanli.png" src="" title="返利网" alt="返利网" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-hao123.png" src="" title="hao123" alt="hao123" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-motu.png" src="" title="百度魔图" alt="百度魔图" width="50" height="50">
+        </li>
+        <li>
+            <img data-src="/web/css/images/customer-qiushi.png" src="" title="糗事百科" alt="糗事百科" width="50" height="50">
+        </li>
+    </ul>
+    <div class="customer-mask"></div>
+</div>
+<div class="use-it">
+    <div class="wrapper">
+        <h3>高效、专业的移动应用统计工具</h3>
+        <a href="javascript:void(0);" class="opacity-btn" id="use-it-btn">免费使用</a>
+    </div>
+</div>
+
+
+<script id="sdk-dialog-template" type="text/template">
+    <div id="sdk-tabs">
+        <div class="tabs">
+            <ul>
+                if (this.ios && this.ios.length > 0) {
+                <li>
+                    <a href="javascript:void(0)" class="ios-sdk">iOS SDK</a>
+                </li>
+                }
+                if (this.android && this.android.length > 0) {
+                <li>
+                    <a href="javascript:void(0)" class="android-sdk">Android SDK</a>
+                </li>
+                }
+                if (this.isIntegration) {
+                <li>
+                    <a href="javascript:void(0)" class="common-sdk">集成SDK</a>
+                </li>
+                }
+            </ul>
+        </div>
+        <div class="tab-contents">
+            <ul>
+                if (this.ios && this.ios.length > 0) {
+                <li>
+                    <div class="content clearfix">
+                        <div class="current">
+                            var currentVersion = this.ios[0];
+                            <p>
+                                <span class="update-version">当前版本：V#{currentVersion.version}</span>
+                                <span class="update-date">（更新日期：#{currentVersion.date}）</span>
+                            </p>
+                            <div class="current-link clearfix">
+                                <a href="#{currentVersion.sdkUrl}" class="product-btn btn-download">下载</a>
+                                <a href="#{currentVersion.sdkDocumentUrl}" target="_blank" class="product-btn-border btn-document">开发文档</a>
+                            </div>
+                            <ol class="sdk-info">
+                                for (var i = 0; i < currentVersion.sdkDescriptions.length; i++) {
+                                <li>#{currentVersion.sdkDescriptions[i]}</li>
+                                }
+                            </ol>
+                        </div>
+                        <div class="history">
+                            for (var i = 1; i < this.ios.length; i++) {
+                            var historyVersion = this.ios[i];
+                            <div class="history-item">
+                                <p>
+                                    <span class="update-version">V#{historyVersion.version}</span>
+                                    <span class="update-date">（更新日期：#{historyVersion.date}）</span>
+                                </p>
+                                <ol class="sdk-info">
+                                    for (var j = 0; j < historyVersion.sdkDescriptions.length; j++) {
+                                    <li>#{historyVersion.sdkDescriptions[j]}</li>
+                                    }
+                                </ol>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </li>
+                }
+                if (this.android && this.android.length > 0) {
+                <li style="display: none">
+                    <div class="content clearfix">
+                        <div class="current">
+                            var currentVersion = this.android[0];
+                            <p>
+                                <span class="update-version">当前版本：V#{currentVersion.version}</span>
+                                <span class="update-date">（更新日期：#{currentVersion.date}）</span>
+                            </p>
+                            <div class="current-link clearfix">
+                                <a href="#{currentVersion.sdkUrl}" class="product-btn btn-download">下载</a>
+                                <a href="#{currentVersion.sdkDocumentUrl}" target="_blank" class="product-btn-border btn-document">开发文档</a>
+                            </div>
+                            <ol class="sdk-info">
+                                for (var i = 0; i < currentVersion.sdkDescriptions.length; i++) {
+                                <li>#{currentVersion.sdkDescriptions[i]}</li>
+                                }
+                            </ol>
+                        </div>
+                        <div class="history">
+                            for (var i = 1; i < this.android.length; i++) {
+                            var historyVersion = this.android[i];
+                            <div class="history-item">
+                                <p>
+                                    <span class="update-version">V#{historyVersion.version}</span>
+                                    <span class="update-date">（更新日期：#{historyVersion.date}）</span>
+                                </p>
+                                <ol class="sdk-info">
+                                    for (var j = 0; j < historyVersion.sdkDescriptions.length; j++) {
+                                    <li>#{historyVersion.sdkDescriptions[j]}</li>
+                                    }
+                                </ol>
+                            </div>
+                            }
+                        </div>
+                    </div>
+                </li>
+                }
+                if (this.isIntegration) {
+                <li style="display: none">
+                    <a href="http://developer.baidu.com/frontia/sdk" target="_blank" class="product-btn common-download">下载集成SDK</a>
+                    <p class="common-info">
+                        整合App开发所需的核心后端服务，包括推送、社会化分享、数据存储和第三方用户登陆等，让你更专注于App的体验和业务逻辑开发。
+                    </p>
+                </li>
+                }
+            </ul>
+        </div>
+    </div>
+</script>
+
+
+
+
+
+    
+    <div class="footer">
+        <div class="footer-top">
+            <div class="nav-item nav-latest">
+                <h3>最新动态</h3>
+                <ul>
+                                        <li>
+                        <a href="http://tieba.baidu.com/p/4537479484" target="_blank" title="客户端可看错误分析、地域分布、分时数据">[16-05-10]&nbsp;&nbsp;客户端可看错误分析、地域分布、分时数据</a>
+                    </li>
+                                        <li>
+                        <a href="http://tieba.baidu.com/p/4537784107" target="_blank" title="两张图读懂渠道分布原理">[16-05-10]&nbsp;&nbsp;两张图读懂渠道分布原理</a>
+                    </li>
+                                        <li>
+                        <a href="http://tieba.baidu.com/p/4525120775" target="_blank" title="【新上线】折线图颜值更清新">[16-05-05]&nbsp;&nbsp;【新上线】折线图颜值更清新</a>
+                    </li>
+                                        <li>
+                        <a href="http://tieba.baidu.com/p/4525102239" target="_blank" title="【新上线】渠道来源设置可下载">[16-05-05]&nbsp;&nbsp;【新上线】渠道来源设置可下载</a>
+                    </li>
+                                        <li>
+                        <a href="http://tieba.baidu.com/p/3749915821" target="_blank" title="4月最新功能抢鲜体验">[15-04-14]&nbsp;&nbsp;4月最新功能抢鲜体验</a>
+                    </li>
+                                    </ul>
+            </div>
+            <div class="nav-item nav-product">
+                <h3>统计产品</h3>
+                <ul>
+                    <li><a href="http://tongji.baidu.com/" target="_blank">网站统计</a></li>
+                    <li><a href="http://tongji.baidu.com/web/welcome/login" target="_blank">推广分析</a></li>
+                    <li><a href="//mtj.baidu.com" target="_blank">移动统计</a></li>
+                    <li><a href="/web/game" target="_blank">游戏统计</a></li>
+                    <li><a href="http://tongji.baidu.com/data/mobile/brand" target="_blank">流量研究院</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>支持与帮助</h3>
+                <ul>
+                    <li><a href="/web/sdk/index" target="_blank">SDK下载</a></li>
+                    <li><a href="/web/welcome/appdownload" target="_blank">手机客户端</a></li>
+                    <li><a href="/web/help/index" target="_blank">服务中心</a></li>
+                </ul>
+            </div>
+            <div class="nav-item nav-document">
+                <h3>文档中心</h3>
+                <ul>
+                    <li><a href="/web/welcome/whitepaper" target="_blank">白皮书</a></li>
+                    <li><a href="/web/welcome/industry" target="_blank">数据报告</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <h3>关于我们</h3>
+                <ul>
+                    <li><a href="/web/welcome/contact" target="_blank">联系我们</a></li>
+                    <li>
+                        <a href="http://tieba.baidu.com/f?ie=utf-8&kw=%E7%99%BE%E5%BA%A6%E7%A7%BB%E5%8A%A8%E7%BB%9F%E8%AE%A1" target="_blank">
+                            百度贴吧
+                            <i class="tieba-icon"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://weibo.com/apptongji" target="_blank">
+                            新浪微博
+                            <i class="weibo-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom tac">
+            <ul class="friend-link">
+                <li><a href="http://tongji.baidu.com" target="_blank">百度统计</a></li><!--
+             --><li><a href="http://tuijian.baidu.com" target="_blank">百度推荐</a></li><!--
+             --><li><a href="http://eye.baidu.com" target="_blank">黄金眼</a></li><!--
+             --><li><a href="http://sinan.baidu.com" target="_blank">百度司南</a></li><!--
+             --><li><a href="http://yuqing.baidu.com" target="_blank">百度舆情</a></li><!--
+             --><li><a href="http://j.baidu.com" target="_blank">百度精算</a></li><!--
+             --><li><a href="http://daiyanren.baidu.com" target="_blank">百度代言人</a></li><!--
+             --><li><a href="http://trends.baidu.com" target="_blank">百度预测</a></li><!--
+             --><li><a href="http://tianyan.baidu.com" target="_blank">百度天眼</a></li><!--
+             --><li><a href="http://bigengine.baidu.com" target="_blank">百度大数据引擎</a></li><!--
+             --><li class="last-friend-link"><a href="http://bce.baidu.com" target="_blank">百度开放云</a></li>
+            </ul>
+            <p class="copyright">
+                ©2016 Baidu
+                <a href="https://www.baidu.com/duty/" target="_blank">使用百度前必读</a>
+            </p>
+        </div>
+    </div>
+    
+
+    
+    <script id="login-dialog-template" type="text/template">
+    <div id="login-container">
+        <div class="login-tab tabs clearfix">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" class="psp-user">百度用户账号</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="tj-user">联盟推广账号</a>
+                </li>
+            </ul>
+        </div>
+        <div class="login-input tab-contents">
+            <ul>
+                <li style="display: none">
+                    <div id="psp">
+                        <div id="login-psp">
+                        </div>
+                        <div class="login-link">
+                            <a href="#{T.config.pageInfo.passport_reg_url}#{document.location.protocol}//#{T.config.systemConfig.domain}#{T.config.systemConfig.webRoot}#{T.config.pageInfo.passport_returnurl}">立即注册</a>
+                            <a id="psp-forget" href="https://passport.baidu.com/?getpass_index">忘记密码</a>
+                        </div>
+                    </div>
+                </li>
+                <li style="display: none">
+                    <div id="tj">
+                        <form action="#{this.loginAction}" method="post">
+                            <input type="hidden" name="appid" id="appid" value="12" />
+                            <div id="tj-login">
+                                <p class="tj-item">
+                                    <label for="uc-username" class="tj-label tj-label-username">用户名：</label>
+                                    <input type="text" class="tj-input tj-input-username" tabindex="1" value="#{this.username}" name="entered_login" id="uc-username" placeholder="用户名">
+                                </p>
+                                <p class="tj-item">
+                                    <label for="uc-password" class="tj-label tj-label-password">密码：</label>
+                                    <input type="password" class="tj-input tj-input-password" class="tj-input tj-input-password" tabindex="2" style="ime-mode:disabled" name="entered_password" id="uc-password" placeholder="密码">
+                                    <span id="uc-safe-pwd-input" class="uc-safe-pwd-input-hidden"></span>
+                                </p>
+                                <p class="tj-item">
+                                    <label for="uc-valicode" class="tj-label tj-label-verifycode">验证码：</label>
+                                    <input type="text" class="tj-input tj-input-verifycode" style="ime-mode:disabled" tabindex="3" autocomplete="off" maxlength="4" name="entered_imagecode" id="uc-valicode" placeholder="验证码">
+                                    <span class="tj-verify-code">
+                                        <img align="middle" width="60" height="28" src="#{this.authCode}" alt="验证码" id="cas-code" />
+                                    </span>
+                                    <a id="change-cas" href="javascript:void(0);">换一张</a>
+                                </p>
+                                <p class="tj-item">
+                                    <input type="submit" value="登录" tabindex="4" id="tj-submit">
+                                </p>
+                                <div class="login-link">
+                                    <label for="safe-check" class="safe-check-label">
+                                        <input type="checkbox" tabindex="5" id="safe-check"/>安全控件登录
+                                    </label>
+                                    <a href="#{this.ucForget}" class="tj-forget">忘记密码</a>
+                                </div>
+                            </div>
+                            <input type="hidden" value="utf-8" name="charset" />
+                            <input type="hidden" value="#{this.ucFromUrl}" name="fromu" />
+                            <input type="hidden" value="#{this.selfUrl}" name="selfu" />
+                            <input type="hidden" value="1" name="senderr" />
+                        </form>
+                        <div class="tj-info">
+                            <p id="tj-tip">百度统计/百度联盟/百度推广账号在此登录</p>
+                            <p id="tj-error"></p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </script>
+    <script type="text/javascript">
+    (function () {
+        if (window.top !== window.self) {
+            var notify = function (msg) {
+                msg = '{ "data": ' + msg + ', "type": "Authorization" }';
+                if (window.postMessage) {
+                    window.top.postMessage(msg, "*");
+                }
+                else {
+                    var iframe = window.top.frames['waiting'];
+                    if (iframe) {
+                        iframe.window.name = msg;
+                        iframe.window.location = 'about:blank';
+                    }
+                }
+            };
+            notify('登录超时');
+        }
+        
+    })();
+    </script>
+    
+    
+    <script type="text/javascript">
+        var LOGIN_VAR = {
+            loginAction: 'https://cas.baidu.com/?action=login',
+            authCode: "https://cas.baidu.com/?action=image&key=1466492429",
+            username: '',
+            ucForget: 'https://cas.baidu.com/?controller=user&action=retrivepwd&appscope[]=12&appscope[]=32&appscope[]=6&appscope[]=3&appscope[]=34&appscope[]=196',
+            ucFromUrl: 'https://mtj.baidu.com/web/welcome/uc',
+            selfUrl: 'https://mtj.baidu.com/web/welcome/login'
+        };
+    </script>
+    <script src="/web/js/tangram.js?__v=20160621102608" type="text/javascript"></script>
+    <script src="/web/js/common.js?__v=20160621102608" type="text/javascript"></script>
+    <script type="text/javascript">
+        T.extend(T.config, {"menuList":[{"id":"sdk","title":"SDK\u4e2d\u5fc3","collapsed":false,"uri":"\/web\/sdk\/index"},{"id":"contact","title":"\u8054\u7cfb\u6211\u4eec","collapsed":false,"uri":"\/web\/welcome\/contact"},{"id":"news","title":"\u6700\u65b0\u52a8\u6001","collapsed":false,"uri":"\/web\/welcome\/news"},{"id":"industry","title":"\u884c\u4e1a\u62a5\u544a","collapsed":false,"uri":"\/web\/welcome\/industry"},{"id":"whitepaper","title":"\u767d\u76ae\u4e66","collapsed":false,"uri":"\/web\/welcome\/whitepaper"}],"bannerList":[],"systemConfig":{"fabuUrl":"http:\/\/fabu.baidu.com","domain":"mtj.baidu.com","protocol":"https:","webRoot":"\/web","baseUri":"\/web","ajaxUri":"\/web\/ajax\/post","memoUri":"\/web\/common\/memo","trackUri":"\/web\/stat\/index","now":1466492429000,"hmJsFootCode":"<script>var _hmt = _hmt || [];(function() {var hm = document.createElement(\"script\");\nhm.src = \"\/\/hm.baidu.com\/hm.js?767db4ee1769de108fba6ac84b763cf3\";\nvar s = document.getElementsByTagName(\"script\")[0];s.parentNode.insertBefore(hm, s);})();<\/script>","feedbackImageBaseUrl":"\/static\/feedback\/","feedbackTypes":{"1":"\u7ed1\u5b9aSDK\u4e0e\u57cb\u70b9","2":"\u529f\u80fd\u4f7f\u7528","3":"\u6307\u6807\u8bf4\u660e","4":"\u5f02\u5e38\u53cd\u9988","5":"\u517c\u5bb9\u9002\u7528","6":"\u8d26\u53f7\u8fc1\u79fb\u4e0e\u5347\u7ea7","7":"\u5efa\u8bae\u4e0e\u5408\u4f5c"},"userAgentFlag":false},"pageInfo":{"helpUri":"\/web\/home\/user\/help","logoutUri":"\/web\/welcome\/logout","title":"\u767e\u5ea6\u79fb\u52a8\u7edf\u8ba1","ucFromUrl":"https:\/\/mtj.baidu.com\/web\/welcome\/uc","selfUrl":"https:\/\/mtj.baidu.com\/web\/welcome\/login","ucForget":"https:\/\/cas.baidu.com\/?controller=user&action=retrivepwd&appscope[]=12&appscope[]=32&appscope[]=6&appscope[]=3&appscope[]=34&appscope[]=196","ucslJsUrl":"cas.baidu.com\/ucsl\/ucsl.js","passport_returnurl":"\/welcome\/psp","passport_jumpurl":"\/welcome\/jump","passport_domain":"https:\/\/passport.baidu.com","passport_cdn":"https:\/\/ss0.bdstatic.com\/5LMZfyabBhJ3otebn9fN2DJv","passport_reg_url":"https:\/\/passport.baidu.com\/v2\/?reg&tpl=holmes_maa&u=","appKey":{"typical":"3b36a00b84","game":"0795459a2e","ad":"8943609f98"},"errMsg":""},"userInfo":{"roles":{"ico":1}}});
+    </script>
+    <script type="text/javascript" src="https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/js/wrapper.js?cdnversion=1466492429000"></script>
+    <script type="text/javascript">
+    var _bducProtocol = (('https:' === document.location.protocol) ? ' https://' : ' http://');
+    document.write(unescape('%3Cscript src="' + _bducProtocol + 'cas.baidu.com/ucsl/ucsl.js%3Fappid=12%26d='
+         + Math.floor((+new Date) / (864e5)) + '"' + ' type="text/javascript"%3E%3C/script%3E'));
+    </script>
+    <script src="/web/js/login.js?__v=20160621102608" type="text/javascript"></script>
+
+</body>
+</html>

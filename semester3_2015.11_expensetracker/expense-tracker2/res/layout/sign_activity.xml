@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".MainActivity" >
+
+    <include
+        android:id="@+id/sign_header"
+        layout="@layout/sign_header" />
+
+    <LinearLayout
+        android:id="@id/edit_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bottom_bar_bg"
+        android:gravity="center"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip" >
+
+        <Button
+            android:id="@+id/edit_sign"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.00"
+            android:background="@drawable/sign_states" />
+
+        <Button
+            android:id="@+id/edit_cancel"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.00"
+            android:background="@drawable/cancel_states" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/add_48" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/sign_header"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="118dp"
+        android:src="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="21dp"
+        android:src="@drawable/password2" />
+
+    <EditText
+        android:id="@+id/edit_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView1"
+        android:layout_toRightOf="@+id/imageView1"
+        android:hint="Account"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView2"
+        android:layout_alignLeft="@+id/edit_account"
+        android:layout_alignRight="@+id/edit_account"
+        android:ems="10"
+        android:hint="Password"
+        android:imeOptions="actionNext"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/edit_footer"
+        android:layout_toLeftOf="@+id/register"
+        android:text="Click here to create."
+        android:textColor="#808080"
+        android:textSize="17sp" />
+
+</RelativeLayout>

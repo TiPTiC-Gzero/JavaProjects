@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-12-29 11:01:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="packages.Users" table="USERS" schema="SA" optimistic-lock="version">
+        <id name="accountid" type="string">
+            <column name="ACCOUNTID" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="username" type="string">
+            <column name="USERNAME" length="20" />
+        </property>
+        <property name="password" type="string">
+            <column name="PASSWORD" length="20" />
+        </property>
+        <property name="age" type="java.lang.Integer">
+            <column name="AGE" />
+        </property>
+        <property name="birthdate" type="date">
+            <column name="BIRTHDATE" length="10" />
+        </property>
+        <property name="email" type="string">
+            <column name="EMAIL" length="20" />
+        </property>
+        <property name="country" type="string">
+            <column name="COUNTRY" length="10" />
+        </property>
+        <property name="phonenumber" type="string">
+            <column name="PHONENUMBER" length="20" />
+        </property>
+    </class>
+</hibernate-mapping>

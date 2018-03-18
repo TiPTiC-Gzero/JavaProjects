@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-12-29 11:01:46 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="packages.Course" table="COURSE" schema="SA" optimistic-lock="version">
+        <id name="courseid" type="int">
+            <column name="COURSEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="coursename" type="string">
+            <column name="COURSENAME" length="20" />
+        </property>
+        <property name="accountid" type="string">
+            <column name="ACCOUNTID" length="20" />
+        </property>
+        <property name="courseState" type="java.lang.Integer">
+            <column name="COURSE_STATE" />
+        </property>
+    </class>
+</hibernate-mapping>

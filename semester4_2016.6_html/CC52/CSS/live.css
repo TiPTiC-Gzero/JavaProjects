@@ -1,0 +1,1643 @@
+@charset "utf-8";
+.thumb {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/1.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+
+
+
+
+
+
+.thumb1 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb1 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/2.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb1:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb1 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb1 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb1 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb1:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thumb2 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb2 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/3.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb2:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb2 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb2 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb2 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb2:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thumb3 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb3 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/4.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb3:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb3 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb3 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb3 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb3:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}
+
+
+
+.thumb4 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb4 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/5.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb4:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb4 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb4 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb4 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb4:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+.thumb5 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb5 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/6.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb5:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb5 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb5 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb5 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb5:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+.thumb6 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb6 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/7.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb6:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb6 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb6 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb6 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb6:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+.thumb7 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb7 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/8.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb7:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb7 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb7 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb7 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb7:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+.thumb8 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb8 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/9.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb8:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb8 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb8 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb8 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb8:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+.thumb9 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb9 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/10.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb9:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb9 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb9 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb9 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb9:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+.thumb10 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb10 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/11.jpeg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb10:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb10 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb10 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb10 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb10:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+.thumb11 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb11 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/12.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb11:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb11 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb11 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb11 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb11:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+.thumb12 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb12 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/13.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb12:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb12 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb12 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb12 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb12:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+.thumb13 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb13 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/14.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb13:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb13 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb13 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb13 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb13:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+
+
+.thumb14 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb14 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/fujiancuisine.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb14:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb14 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb14 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb14 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb14:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+
+
+.thumb15 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb15 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/shandongcuisine.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb15:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb15 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb15 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb15 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb15:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+.thumb16 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb16 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/anhuicuisine.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb16:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb16 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb16 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb16 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb16:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+
+.thumb17 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb17 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/sichuancuisine.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb17:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb17 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb17 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb17 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb17:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+.thumb18 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb18 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/suzhoucuisine.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb18:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb18 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb18 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb18 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb18:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+.thumb19 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb19 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/hunancuisine.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb19:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb19 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb19 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb19 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb19:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+
+
+.thumb20 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb20 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/hunancuisine.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb20:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb20 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb20 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb20 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb20:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+.thumb21 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb21 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/chopsticks.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb21:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb21 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb21 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb21 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb21:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+.thumb22 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb22 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/ricecake.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb22:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb22 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb22 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb22 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb22:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+.thumb23 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb23 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/mooncake.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb23:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb23 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb23 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb23 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb23:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+.thumb24 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb24 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/familydinner1.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb24:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb24 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb24 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb24 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb24:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+
+
+
+
+
+.thum25 {
+	width: 400px; height: 300px; margin: 70px auto;
+	perspective: 1000px;
+}
+.thumb25 a {
+	display: block; width: 100%; height: 100%;
+	/*double layered BG for lighting effect*/
+	background: 
+		linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+		url(../images/live/familydinner2.jpg);
+	/*disabling the translucent black bg on the main image*/
+	background-size: 0, cover;
+	/*3d space for children*/
+	transform-style: preserve-3d;
+	transition: all 0.5s;
+}
+.thumb25:hover a {transform: rotateX(80deg); transform-origin: bottom;}
+/*bottom surface */
+.thumb25 a:after {
+	/*36px high element positioned at the bottom of the image*/
+	content: ''; position: absolute; left: 0; bottom: 0; 
+	width: 100%; height: 36px;
+	/*inherit the main BG*/
+	background: inherit; background-size: cover, cover;
+	/*draw the BG bottom up*/
+	background-position: bottom;
+	/*rotate the surface 90deg on the bottom axis*/
+	transform: rotateX(90deg); transform-origin: bottom;
+}
+/*label style*/
+.thumb25 a span {
+	color: white; text-transform: uppercase;
+	position: absolute; top: 100%; left: 0; width: 100%;
+	font: bold 12px/36px Montserrat; text-align: center;
+	/*the rotation is a bit less than the bottom surface to avoid flickering*/
+	transform: rotateX(-89.99deg); transform-origin: top;
+	z-index: 1;
+}
+/*shadow*/
+.thumb25 a:before {
+	content: ''; position: absolute; top: 0; left: 0;
+	width: 100%; height: 100%;
+	background: rgba(0, 0, 0, 0.5); 
+	box-shadow: 0 0 100px 50px rgba(0, 0, 0, 0.5);
+	transition: all 0.5s; 
+	/*by default the shadow will be almost flat, very transparent, scaled down with a large blur*/
+	opacity: 0.15;
+	transform: rotateX(95deg) translateZ(-80px) scale(0.75);
+	transform-origin: bottom;
+}
+.thumb25:hover a:before {
+	opacity: 1;
+	/*blurred effect using box shadow as filter: blur is not supported in all browsers*/
+	box-shadow: 0 0 25px 25px rgba(0, 0, 0, 0.5);
+	/*pushing the shadow down and scaling it down to size*/
+	transform: rotateX(0) translateZ(-60px) scale(0.85);
+}/* CSS Document */
+

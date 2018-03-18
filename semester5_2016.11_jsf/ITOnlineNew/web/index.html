@@ -1,0 +1,596 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+ <script type="text/javascript" src="js/smooth-scroll.js"></script>
+
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+
+<link href='http://fonts.useso.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!----font-Awesome----->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+$(function(){   
+    $('a[href*=#],area[href*=#]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var $target = $(this.hash);
+            $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
+            if ($target.length) {
+                var targetOffset = $target.offset().top;
+                $('html,body').animate({
+                    scrollTop: targetOffset
+                },
+                1500);
+                return false;
+            }
+        }
+    });
+})
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html">LearningLight.org</a>
+	    </div>
+	    <!--/.navbar-header-->
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		            <a href="login.xhtml"><i class="fa fa-user"></i><span>Login</span></a>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Courses</span></a>
+		        	  <ul class="dropdown-menu">
+			            <li><a href="courses.html">Courses Categories</a></li>
+			            
+			            <li><a href="course_detail.html">Courses detail</a></li>
+		              </ul>
+		        </li>
+<!--		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i><span>Tests</span></a>
+		             <ul class="dropdown-menu">
+			            <li><a href="course_detail.html">All tests</a></li>
+			            <li><a href="course_detail.html">Test Passed</a></li>
+			            <li><a href="course_detail.html">Test unpassed</a></li>
+		             </ul>
+		        </li>-->
+		        <li class="dropdown">
+                            <a href="#lable2 "  class="dropdown-toggle page-scroll" ><i class="fa fa-globe"></i><span>Video</span></a>
+		            
+		        </li>
+		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>
+		            <ul class="dropdown-menu search-form">
+			           <form>        
+                            <input type="text" class="search-text" name="s" placeholder="Search...">    
+                            <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+                       </form>
+			        </ul>
+		        </li>
+		    </ul>
+	    </div>
+	    <div class="clearfix"> </div>
+	  </div>
+	    <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+ <div class="container">
+ <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header nav_2">
+      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+   </div> 
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+        <ul class="nav navbar-nav nav_1">
+            
+            <li><a href="about.html">About</a></li>
+    		<li class="dropdown mega-dropdown active">
+			    		
+				<div class="dropdown-menu mega-dropdown-menu">
+                    <div class="container-fluid">
+    				    <!-- Tab panes -->
+                        
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li class="active"><a href="#men" role="tab" data-toggle="tab">School</a></li>
+                       <li><a href="#women" role="tab" data-toggle="tab">College</a></li>
+                   </ul>                    
+				</div>				
+			</li>
+			
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                
+                <li><a href="shortcodes.html">Shortcodes</a></li>
+                
+              </ul>
+            </li>
+            
+            
+          
+            
+        </ul>
+     </div><!-- /.navbar-collapse -->
+   </div>
+</nav>
+<!-- banner -->
+	<div class="banner">
+			<!-- banner Slider starts Here -->
+					<script src="js/responsiveslides.min.js"></script>
+					 <script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider3").responsiveSlides({
+							auto: true,
+							pager: true,
+							nav: true,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+					
+						});
+					  </script>
+					<!--//End-slider-script -->
+					<div  id="top" class="callbacks_container">
+						<ul class="rslides" id="slider3">
+							<li>
+								<div class="banner-bg">
+									<div class="container">
+										<div class="banner-info">
+											<h3>Join Us<span>to get knowledge</span>with friends</h3>
+											<p>Learning Light Online IT system offers support.
+											</p>
+											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-bg banner-img4">
+									<div class="container">
+										<div class="banner-info">
+											<h3><span>Stay </span>in touch<span>Learning Light</span></h3>
+											<p>Inspired by bold colors and matching up to footballs on-pitch
+												playmakers, these kicks are ready to stand out.
+											</p>
+											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-bg banner-img3">
+									<div class="container">
+										<div class="banner-info">
+											<h3><span>To seek </span> better development<span>looks reasonable</span></h3>
+											<p>Inspired by Brasil’s bold colors and matching up to footballs on-pitch
+												playmakers, these Brasil’s kicks are ready to stand out.
+											</p>
+											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-bg banner-img5">
+									<div class="container">
+										<div class="banner-info">
+											<h3><span>A new </span><span>learning model can help you</span> improve quickly</span></h3>
+											<p>Inspired by bold colors and matching up to footballs on-pitch
+												playmakers, these kicks are ready to stand out.
+											</p>
+											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="banner-bg banner-img2">
+									<div class="container">
+										<div class="banner-info">
+											
+										</div>
+									</div>
+								</div>
+							</li>
+							
+						</ul>
+		          </div>
+	</div>
+	<!-- //banner -->
+	
+     <div class="grid_1">
+     	<div class="container">
+     		<div class="col-md-4">
+                <div class="news">
+                    <h1>News</h1>
+                    <div class="section-content">
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>12-25-2016</figure>
+                            <a href="#">Latest course video of Swift 2.0 have uploaded.</a>
+                        </article>
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>11-30-2016</figure>
+                            <a href="#">Challenge well-paid - RxJava reactive programming steps</a>
+                        </article>
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>11-02-2016</figure>
+                            <a href="#">Vue.js-The front frame explanation - based & advanced & actual combat</a>
+                        </article>
+                        <article>
+                            <figure class="date"><i class="fa fa-file-o"></i>10-24-2016</figure>
+                            <a href="#">Android Integrated development environment set up.</a>
+                        </article>
+                        
+                    </div><!-- /.section-content -->
+                    <a href="#" class="read-more">All News</a>
+                </div><!-- /.news-small -->
+            </div>
+            <div class="col-md-8 grid_1_right">
+              <h2>User Log</h2>
+		      <div class="but_list">
+		       <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+				<ul id="myTab" class="nav nav-tabs nav-tabs1" role="tablist">
+				  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Day 1&nbsp;&nbsp;&nbsp;22-12-2016</a></li>
+				  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Day 2&nbsp;&nbsp;&nbsp;25-11-2016</a></li>
+				  <li role="presentation"><a href="#profile1" role="tab" id="profile-tab1" data-toggle="tab" aria-controls="profile1">Day 3&nbsp;&nbsp;&nbsp;20-11-2016</a></li>
+				</ul>
+			<div id="myTabContent" class="tab-content">
+			  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+			    <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:48AM</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>SanFran Street</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Tim</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">The First day of Learning Light</a></h3>
+						  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <a href="#">Read More</a></p>
+						  <img src="images/t9.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			   <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>6.22PM</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Alats Mountain Flat</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lucy</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Traveller comes from Science</a></h3>
+						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form <a href="#">Read More</a></p>
+						  <img src="images/t5.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			  </div>
+			  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+			    <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Room A</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lorem Ipsum</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Passion of Study</a></h3>
+						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form <a href="#">Read More</a></p>
+						  <img src="images/t8.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			   <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Room A</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lorem Ipsum</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">How can we have access to .NET</a></h3>
+						  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature <a href="#">Read More</a></p>
+						  <img src="images/t2.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="profile1" aria-labelledby="profile-tab1">
+			    <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Room A</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lorem Ipsum</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">My Personal Development Steps</a></h3>
+						  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings <a href="#">Read More</a></p>
+						  <img src="images/t7.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			   </div>
+			   <div class="events_box">
+			    	<div class="event_left"><div class="event_left-item">
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Room A</div>
+			    		<div class="icon_2">
+			    		  <div class="speaker">
+			    			  <i class="fa fa-user"></i>
+			    			  <div class="speaker_item">
+			    			     <a href="#">Lorem Ipsum</a>
+			    			  </div>
+			    			  <div class="clearfix"></div></div>
+			    		  </div>
+			    		</div>
+			    	</div>
+			    	<div class="event_right">
+			    		  <h3><a href="#">Programming instructions</a></h3>
+						  <p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur.... <a href="#">Read More</a></p>
+						  <img src="images/t4.jpg" class="img-responsive" alt=""/>	
+		    	    </div>
+		    	    <div class="clearfix"></div>
+			    </div>
+			   </div>
+		     </div>
+		    </div>
+		   </div>
+      </div>
+      <div class="clearfix"> </div>
+     </div>
+    </div>
+    <div class="bg">
+     	<div class="container">
+     		<div class="timer_wrap">
+				<div id="counter"> </div>		
+			</div> 
+			<div class="newsletter">
+			  <form>
+				<input type="text" name="ne" size="30" required placeholder="Please fill your email">
+				<input type="submit" value="Subscribe">
+			  </form>
+            </div>
+        </div>
+   </div>
+         <a name="lable2" id="lable2"></a>
+   <div class="bottom_content">  
+      
+   	 <h3>Mini Course</h3>
+     <div class="grid_2">
+     	<div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t15_1.jpg" style="height:360px;width:320px;" class="img-responsive" alt=""/>
+                <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Cocos2d-x Engine source of texture</a></h4>
+               <p >The elements in the game, such as lifelike characters, static building Bridges, even a 2 d dialog box, the task bar and the text inside, the shape of these elements depends on the vertex coordinates of basic relied on texture and color, texture is an essential part of the game, is also an important concept in OpenGL ES.
+</p>
+                
+                <a href="course_detail.html">
+                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t10_1.jpg" style="height:360px;width:320px;" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Google I/O 2016 Technical disclosure and foresight</a></h4>
+               <p>At 1 am on May 19, 2016 the official start of the Google I/O. With the release of all the black science and technology. Google gives us a powerful artificial intelligence technology and direction of all the new features and technology.
+</p>
+               <span>
+                  
+                </span>
+                <a href="course_detail.html">
+                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t10_2.gif" class="img-responsive" style="height:360px;width:320px;" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">The advanced iOS interface Layer of animation tutorial 
+</a></h4>
+               <p>Layer level of Animation Animation is more flexible than the View level, because it is located in the Core the bottom of the Animation framework, performance faster and more powerful.
+</p>
+               <span>
+                  
+                </span>
+                <a href="course_detail.html">
+                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+     </div>
+     <div class="grid_3">
+     	<div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t1.gif"  style="height:360px; width:320px" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               
+                <h4><a href="#">Xffect particle system - skills made of particles
+</a></h4>
+               <p>Any performance in traditional game performance theory is that there should be three states, namely the birth, run and die.
+Skills particle performance also needs to have the three stages, how to combine multiple particle effects to performance skills status is the focus of this course.
+</p>
+               <span>
+                  
+                </span>
+                <a href="course_detail.html">
+                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t14_1.png" style="height:360px; width:320px" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Objective - C</a></h4>
+               <p>Compatibility in the introduction to the development of OC, interpretation of the OC, string, class methods and attributes in OC what is protocol, what is the classification of OC in the file extensions and contrast in C language.
+</p>
+               <span>
+                  
+                </span>
+                <a href="course_detail.html">
+                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="images/t11_1.jpg"  style="height:360px; width:320px" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Using Alamofire to request network
+</a></h4>
+               <p>Alamofire is a written in Swift HTTP network library, the author of the popular open source project AFNetworking before Mattt development, can be very simple for asynchronous network communication.
+</p>
+                <span>
+                  
+                </span>
+                <a href="course_detail.html">
+                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+     </div>
+    </div>
+    <div class="footer">
+    	<div class="container">
+    		<div class="col-md-3 grid_4" style="width:50% !important;">
+    		   <h3>About Us</h3>	
+    		   <p>"Learninglight Virtual Academy was founded in 2008 for providing online IT training in China. To address the requirements Learninglight tied up with ZynlaCom, a Shenzhen based S/W development firm to develop the online tutorial System..."</p>
+    		      <ul class="social-nav icons_2 clearfix">
+                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+                 </ul>
+    		</div>
+    		
+    		<div class="col-md-3 grid_4" style="width:50% !important;">
+    		   <h3>Contact Us</h3>
+    			<address>
+                    <strong>Contrary to popular belief</strong>
+                    <br>
+                    <span>It is a long established</span>
+                    <br><br>
+                    <span>Contrary to popular </span>
+                    <br>
+                    <abbr>Telephone : </abbr> +(0539) 123-456-7
+                    <br>
+                    <abbr>Email : </abbr> <a href="mailto@example.com">LearningLight@edu.com</a>
+               </address>
+    		</div>
+    		
+    		<div class="clearfix"> </div>
+    		<div class="copy">
+		       <p>Copyright &copy; 2017.</p><h1>LightingLight</h1><p> All rights reserved.</p>
+	        </div>
+    	</div>
+    </div>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>	

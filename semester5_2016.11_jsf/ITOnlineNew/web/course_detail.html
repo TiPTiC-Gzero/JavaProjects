@@ -1,0 +1,462 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Course_detail</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/jquery.countdown.css" />
+<link href='http://fonts.useso.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+<!----font-Awesome----->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!----font-Awesome----->
+<script>
+$(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+</script>
+</head>
+<body>
+<nav class="navbar navbar-default" role="navigation">
+	<div class="container">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" href="index.html">LearningLight.org</a>
+	    </div>
+	    <!--/.navbar-header-->
+	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
+	        <ul class="nav navbar-nav">
+		        <li class="dropdown">
+		            <a href="login.xhtml"><i class="fa fa-user"></i><span>Login</span></a>
+		        </li>
+		        <li class="dropdown">
+		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Courses</span></a>
+		        	  <ul class="dropdown-menu">
+			            <li><a href="courses.html">Courses Categories</a></li>
+			            
+			            <li><a href="course_detail.html">Courses detail</a></li>
+		              </ul>
+		        </li>
+		        
+		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>Video</span></a>
+		            
+		        </li>
+		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>
+		            <ul class="dropdown-menu search-form">
+			           <form>        
+                            <input type="text" class="search-text" name="s" placeholder="Search...">    
+                            <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
+                       </form>
+			        </ul>
+		        </li>
+		    </ul>
+	    </div>
+	    <div class="clearfix"> </div>
+	  </div>
+	    <!--/.navbar-collapse-->
+</nav>
+<nav class="navbar nav_bottom" role="navigation">
+ <div class="container">
+ <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header nav_2">
+      <button type="button" class="navbar-toggle collapsed navbar-toggle1" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"></a>
+   </div> 
+   <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
+        <ul class="nav navbar-nav nav_1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+    		<li class="dropdown mega-dropdown active">
+			    		
+				<div class="dropdown-menu mega-dropdown-menu">
+                    <div class="container-fluid">
+    				    <!-- Tab panes -->
+                        
+                    </div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                       <li class="active"><a href="#men" role="tab" data-toggle="tab">School</a></li>
+                       <li><a href="#women" role="tab" data-toggle="tab">College</a></li>
+                   </ul>                    
+				</div>				
+			</li>
+			
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                
+                <li ><a href="shortcodes.html">Shortcodes</a></li>
+                
+              </ul>
+            </li>
+            
+            
+          
+            
+        </ul>
+     </div><!-- /.navbar-collapse -->
+   </div>
+</nav>
+<!-- banner -->
+  <div class="courses_banner">
+  	<div class="container">
+  		<h3>Course_Detail</h3>
+  		<p class="description">
+             learn more things...
+        </p>
+        <div class="breadcrumb1">
+            <ul>
+                <li class="icon6"><a href="index.html">Home</a></li>
+                <li class="current-page"><a href="courses.html">Courses</a>  with  Course_detail</li>
+            </ul>
+        </div>
+  	</div>
+  </div>
+    <!-- //banner -->
+	<div class="courses_box1">
+	   <div class="container">
+	   	  <div class="col-md-3">
+			
+	       <div class="personBox">
+              <div class="personBox_1">
+                 <div class="person_image">
+                      <img src="images/t13_1.jpg" style="width:100px !important;height:100px !important;" class="img-responsive" alt=""/> 
+                 </div>
+                 <div class="person_image_desc">
+                   <h1>Steve Jobs</h1>
+                   <p>Apple founder
+</p>
+                </div>
+                <div class="clearfix"> </div>
+             </div>
+             <div class="person_description">
+                <p>
+                   Jobs is considered to be the computer industry and entertainment industry icon, he experienced decades of ups and downs with the rise and fall, apple has the leadership and launched the Macintosh computer (Macintosh), iMac, iPod, iPhone, and the global electronic products, profoundly changes the modern communication, entertainment and way of life. Jobs and former Pixar animation chairman and chief executive of the company.
+	 <a href="#">More..</a>
+                </p>
+             </div>
+          </div>
+          <div class="social-widget">
+          	<h2>Connect with us</h2>
+          	  <ul class="courses_social">
+				<li class="facebook-icon">
+					<div>
+						<a href="https://www.facebook.com/" target="new" class="fa fa-facebook"></a>
+						<p>2154</p>
+					</div>        							
+				</li>
+				<li class="twitter-icon">
+					<div>
+						<a href="https://twitter.com/" target="new" class="fa fa-twitter"></a>
+						<p>1425</p>
+					</div>        							
+				</li>
+				<li class="gplus-icon">
+					<div>
+						<a href="www.google.com.hk" target="new" class="fa fa-google-plus"></a>
+						<p>2150</p>
+					</div>        							
+				</li>
+				<div class="clearfix"> </div>
+			 </ul>
+           </div>
+           <section class="slider">
+            	<h3>Innovation determines that you are a leader or a follower
+</h3>
+				<div class="flexslider">
+					<ul class="slides">
+						<li>
+							<div class="banner-info1">
+							   <p>Steve jobs think that innovation is without limit, limited imagination. He thinks, if it is a growth industry, innovation is to make products more efficient, easier to use, easier to work. If it is a shrinking industry, innovation is to fast to exit from the original mode, in products and services becoming obsolete, rapid change yourself before is not working.
+</p>	
+							   <h5><a href="#">Laoreet ,</a>Dateratr since 2016</h5>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info1">
+							   <p>Jobs that a startup before ten employees determines the level of this company, because everyone wants to be able to burden the company one over ten of the work. He also used the beatles did mean the power of the team, not a main work can be made by a single, two, three, or four people to complete. In order to put the matter, please do good, work is not completed by one person only, have to find a man of extraordinary ability to cooperation. Finally summarize the individual interaction of forces and that the overall strength will be far greater than the sum of the power of the individual
+</p>	
+							   <h5><a href="#">Distracted ,</a>Dateratr since 2016</h5>
+							</div>
+						</li>
+						<li>
+							<div class="banner-info1">
+							   <p>Steve jobs was a perfectionist. He thought, there is no shortcut to perfect quality, must be good quality positioning to their promises, and unswervingly stick to it. When demanding more of ourselves, and focus on all the details, the product will be different from others.
+</p>	
+							   <h5><a href="#">Suffered ,</a>Dateratr since 2016</h5>
+							</div>
+						</li>
+				    </ul>
+				 </div>
+	      </section>
+	      <ul class="posts">
+	      	<h3>Recent Posts</h3>
+			<li>
+				<article class="entry-item">
+					<div class="entry-thumb pull-left">
+						<img src="images/t17.jpg" class="img-responsive" alt=""/>
+					</div>
+					<div class="entry-content">
+						<h6><a href="#">Three tricks let make you succeed</a></h6>
+						<p><a href="#">Lucy-Petey</a> &nbsp;/&nbsp; 30 Nov 2016</p>
+					</div>
+					<div class="clearfix"> </div>
+				</article>
+			</li>
+			<li>
+				<article class="entry-item">
+					<div class="entry-thumb pull-left">
+						<img src="images/t7.jpg" class="img-responsive" alt=""/>
+					</div>
+					<div class="entry-content">
+						<h6><a href="#">PHP development</a></h6>
+						<p><a href="#">Carry-Swift</a> &nbsp;/&nbsp; 29 Nov 2016</p>
+					</div>
+					<div class="clearfix"> </div>
+				</article>
+			</li>
+			<li>
+				<article class="entry-item">
+					<div class="entry-thumb pull-left">
+						<img src="images/t16.jpg" class="img-responsive" alt=""/>
+					</div>
+					<div class="entry-content">
+						<h6><a href="#">Xffects Uploaded</a></h6>
+						<p><a href="#">Frank</a> &nbsp;/&nbsp; 27 Nov 2016</p>
+					</div>
+					<div class="clearfix"> </div>
+				</article>
+		    </li>
+         </ul>
+		</div>
+		<div class="col-md-9 detail">
+			<img src="images/ios.gif" style="border-style:outset; border-width:5px; border-width:thin; border-radius:20px;" class="img-responsive" alt=""/>
+			<h3>The advanced iOS interface Layer of animation
+</h3>
+			<p>Layer is a simple model class, it opened based on image representation Layer of some of the properties. Behind every UIView is Layer, so we can put the Layer that is behind the scenes of the underlying content.
+Layer level of Animation Animation is more flexible than the View level, because it is located in the Core the bottom of the Animation framework, performance faster and more powerful.
+</p>
+			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                               <i class="fa fa-bookmark-o icon_3"></i>The core content
+
+
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne" aria-expanded="true">
+                        <div class="panel-body">
+                        
+                          <p> 1. The realization of the simple layer of animation</p>
+<p>2. The key and the entrusted the implementation of the animation</p>
+<p>3. The grouping of animation</p>
+<p>4. The spring animation implementation Layer level</p>
+<p>5. Keyframe animation</p>
+<a href="video.xhtml">Click to get Video</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <i class="fa fa-pencil-square-o icon_3"></i>My note of lesson
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                            Standard Layer Layer, use the view on the framework API interface
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="fa fa-comments-o icon_3"></i> Questions of lesson
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                           <p>1.How can we create a Layer quickly?</p>
+                           <p>2.Which method can we call the layer inface?</p>
+                           <p>3.How to create a path and the animation of payth?</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="headingFour">
+                        <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <i class="fa fa-clock-o icon_3"></i> Lesson Schedule
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour" aria-expanded="false" style="height: 0px;">
+                        <div class="panel-body">
+                           <p>9:00-10:30 AM Online Teaching</p>
+                           <p>15:00-18:00 PM Online Project Performance</p>
+                           
+                         </div>
+                    </div>
+                </div>
+              </div>
+              <div class="author-box">
+                  <div class="author-box-left"></div>
+				  <div class="author-box-right">		
+					<h4>Author by <a href="#">Hober</a></h4>
+                    <p>iOS System, Cocos2d - x for doing Metro core developers
+<span class="author-box-left"><img src="images/t13.png" class="img-responsive" alt=""/></span>Best-selling book the Android application development revelation, the author Android technology</p>
+				  </div>
+				  <div class="clearfix"> </div>
+			 </div>
+			 <div class="comment_section">
+			 	<h4>3 Comments</h4>
+			 	<ul class="comment-list">
+                   <li>
+				     <div class="author-box">
+				       <div class="author-box_left"><img src="images/t10.jpg" class="img-responsive" alt=""/></div>
+				       <div class="author-box_right">
+				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
+			            <span class="m_1">Jul 07, 2016 - 12:48 am Nov 15, 2016 - 08:07 pm</span>
+			            <p>So spectacular lesson,more efficiency~</p>
+				
+				      </div> 
+				      <div class="clearfix"> </div>
+				     </div>
+				  </li>
+                  <li>
+				     <div class="author-box">
+				       <div class="author-box_left"><img src="images/author.png" class="img-responsive" alt=""/></div>
+				       <div class="author-box_right">
+				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
+			            <span class="m_1">Jul 19, 2016 - 9:48 am Nov 15, 2016 - 16:00 pm</span>
+			            <p>I think a occured an error when i creating.</p>
+				
+				      </div> 
+				      <div class="clearfix"> </div>
+				     </div>
+				  </li>
+                  <ul class="children">
+                    <li>
+				     <div class="author-box">
+				       <div class="author-box_left"><img src="images/author.png" class="img-responsive" alt=""/></div>
+				       <div class="author-box_right">
+				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
+			            <span class="m_1">Jul 17, 2016 - 10:22 am Nov 15, 2016 - 16:07 pm</span>
+			            <p>Yes you are.So be careful!</p>
+				
+				      </div> 
+				      <div class="clearfix"> </div>
+				     </div>
+				  </li>
+				</ul>
+              </ul>
+			 </div>
+			 <form class="comment-form">
+			 	<h4>Leave a comment</h4>
+				  <div class="col-md-6 comment-form-left">
+					<input type="text" placeholder="Your Name" value="" id="author" name="author" class="form-control">
+	                <input type="text" class="form-control" placeholder="Your Email" value="" id="email" name="email">
+	              </div>
+				  <div class="col-md-6 comment-form-right">
+					<textarea name="comment" aria-required="true" id="comment" class="form-control" placeholder="Comment"></textarea>
+				  </div>
+				  <div class="clearfix"> </div>						
+				  <div class="form-submit">
+				  	<input name="submit" type="submit" id="submit" class="submit_1 btn btn-primary btn-block" value="Add comment"> 
+				  </div>	  
+           </form>
+		  </div>
+		  <div class="clearfix"> </div>
+	   </div>
+	</div>
+  <div class="footer">
+    	<div class="container">
+    		<div class="col-md-3 grid_4" style="width:50% !important;">
+    		   <h3>About Us</h3>	
+    		   <p>"Learninglight Virtual Academy was founded in 2008 for providing online IT training in China. To address the requirements Learninglight tied up with ZynlaCom, a Shenzhen based S/W development firm to develop the online tutorial System..."</p>
+    		      <ul class="social-nav icons_2 clearfix">
+                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#" class="facebook"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a></li>
+                 </ul>
+    		</div>
+    		
+    		<div class="col-md-3 grid_4" style="width:50% !important;">
+    		   <h3>Contact Us</h3>
+    			<address>
+                    <strong>Contrary to popular belief</strong>
+                    <br>
+                    <span>It is a long established</span>
+                    <br><br>
+                    <span>Contrary to popular </span>
+                    <br>
+                    <abbr>Telephone : </abbr> +(0539) 123-456-7
+                    <br>
+                    <abbr>Email : </abbr> <a href="mailto@example.com">LearningLight@edu.com</a>
+               </address>
+    		</div>
+    		
+    		<div class="clearfix"> </div>
+    		<div class="copy">
+		       <p>Copyright &copy; 2017.</p><h1>LightingLight</h1><p> All rights reserved.</p>
+	        </div>
+    	</div>
+    </div>
+<!-- FlexSlider -->
+<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
+  <script defer src="js/jquery.flexslider.js"></script>
+  <script type="text/javascript">
+	$(function(){
+	  SyntaxHighlighter.all();
+	});
+	$(window).load(function(){
+	  $('.flexslider').flexslider({
+		animation: "slide",
+		start: function(slider){
+		  $('body').removeClass('loading');
+		}
+	  });
+	});
+  </script>
+<!-- FlexSlider -->
+</body>
+</html>	

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/home_bg"
+    tools:context=".MainActivity" 
+    >
+     <include
+        layout="@layout/simple_header"
+        android:id="@+id/include_header"/>
+
+    <EditText
+        android:id="@+id/edit_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_header"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Account"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/edit_account"
+        android:ems="10"
+        android:hint="Password"
+        android:imeOptions="actionNext"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:id="@id/edit_footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bottom_bar_bg"
+        android:gravity="center"
+        android:paddingLeft="7dip"
+        android:paddingRight="7dip" >
+
+        <Button
+            android:id="@+id/edit_sign"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.00"
+            android:background="@drawable/sign" />
+
+        <Button
+            android:id="@+id/edit_cancel"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.00"
+            android:background="@drawable/cancel"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

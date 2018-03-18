@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+/**
+ * Copyright (c) 2012 Vinayak Solutions Private Limited 
+ * See the file license.txt for copying permission.
+*/     
+ -->
+<resources>
+
+    <string name="app_name">狗粮跟踪器</string>
+    <string name="version">版本1.0</string>
+    <string name="unknown">0</string>
+    <string name="text">1</string>
+    <string name="camera">2</string>
+    <string name="voice">3</string>
+    <string name="favorite_entry">4</string>
+    <string name="sublist_thisweek">5</string>
+    <string name="sublist_thismonth">6</string>
+    <string name="sublist_thisyear">7</string>
+    <string name="sublist_all">8</string>
+    <string name="unfinished_textentry">未完成文本输入</string>
+    <string name="unknown_entry">未知输入</string>
+    <string name="unfinished_cameraentry">未完成相机输入</string>
+    <string name="unfinished_voiceentry">未完成语音输入</string>
+    <string name="unknown_location">未知位置</string>
+    
+    <!-- Sync Page -->
+    <string name="signin">登录</string>
+    <string name="signup">注册</string>
+    
+    <!-- Default SyncBit Values -->
+    <string name="syncbit_synced">1</string>
+    <string name="syncbit_created">2</string>
+    <string name="syncbit_updated">3</string>
+    <string name="syncbit_deleted">4</string>
+    <string name="syncbit_conflict">5</string>
+    <string name="syncbit_not_synced">6</string>
+    
+    <!-- XML Text -->
+    <string name="no_expenses_text">无费用可供显示，请增加费用</string>
+    <string name="favorite_selection_text">选择一个条目添加到费用</string>
+    <string name="search">搜索</string>
+    
+    <string name="finished_textentry">文本输入</string>
+    <string name="finished_cameraentry">摄像机输入</string>
+    <string name="finished_voiceentry">语音输入</string>
+    
+    <!-- Flurry Events -->
+    <string name="generate_report">生成报表</string>
+    <string name="save_reminder">保存提醒</string>
+    <string name="fav_from_new">新建收藏点</string>
+    <string name="fav_from_show">打开收藏点</string>
+    <string name="rate_app">对APP进行评估</string>
+    <string name="delete_dialog_shown">删除对话框显示</string>
+    <string name="add_expenses_from_listing">从表里添加花费</string>
+    <string name="delete_dialog_checkbox_status">删除对话框中复选框的状态</string>
+    <string name="dialog_opened_to">对话打开</string>
+    <string name="date_changed">日期更改</string>
+    <string name="graph_changed_using_textview">使用标题导航图</string>
+    <string name="deleting_using_context_menu">删除使用上下文菜单</string>
+    <string name="editing_using_context_menu">编辑使用上下文菜单</string>
+    <string name="edit_entry">编辑输入</string>
+    <string name="edit_fav">编辑收藏</string>
+    <string name="new_entry">新的入口</string>
+    <string name="audio_recording_time">录音时间</string>
+    <string name="expense_listing_activity">费用清单活动</string>
+    <string name="page_opened_to_edit_favorite">页面打开编辑收藏</string>
+    <string name="creating_new_entry_using_favorite">创建新的入口使用收藏</string>
+    <string name="generate_report_activity">生成报表活动</string>
+    <string name="home_screen">返回主页面</string>
+    <string name="preference_delete_dialog">Preference Delete Dialog</string>
+    
+    <!-- Toast Text -->
+    <string name="entry_discarded">不再使用</string>
+    
+    <!-- Activity Title -->
+    <string name="manage_favorites">管理收藏</string>
+    <string name="edit_favorite">编辑收藏</string>
+    
+    <!-- Preferences Key -->
+    <string name="pref_key_delete_dialog">prefKeyDeleteDialog</string>
+    <string name="pref_key_token">prefKeyToken</string>
+    <string name="pref_key_sync_user_id">prefKeyUserId</string>
+    <string name="pref_key_set_up_sync">prefSetUpSync</string>
+    <string name="pref_key_sync_name">prefSyncName</string>
+    <string name="pref_key_sync_email">prefSyncEmail</string>
+    <string name="pref_key_sync_password">prefKeySyncPassword</string>
+    <string name="pref_key_flash_res_id">prefKeyFlashResId</string>
+    <string name="pref_key_run_first_time">prefKeyRunFirstTime</string>
+    <string name="pref_key_sync_timestamp">prefKeySyncTimeStamp</string>
+    
+    <!-- Preferences Title-->
+    <string name="delete_dialog_title">显示删除确认对话框</string>
+    <string name="sync_pref_title">设置同步</string>
+        
+    <!-- Dialog Text -->
+    <string name="delete_dialog_text">删除此项?</string>
+    <string name="ok">好</string>
+    <string name="backpress_new_entry_text">放弃这个条目?</string>
+    <string name="backpress_edit_entry_text">撤销?</string>
+    <string name="unfinish_fav_text">未完成输入，放弃此项?</string>
+    <string name="cancel">取消</string>
+    <string name="date_picker_dialog_error_message">不能选之前的日期</string>
+    
+    <!-- Dialog Title -->
+    <string name="confirm_discard">确认放弃</string>
+    <string name="confirm_delete">确认删除</string>
+    
+    <!-- Tab Index -->
+    <string name="tab_thisweek">这一周</string>
+    <string name="tab_thismonth">这一月</string>
+    <string name="tab_thisyear">这一年</string>
+    <string name="tab_all">全部</string>
+    
+
+
+    <!-- alert to the user to that the SD card is too full to complete the operation -->
+    <string name="not_enough_space">您的SD卡已满.</string>
+
+    <!-- alert to the user to that the SD card is being disk-checked -->
+    <string name="preparing_sd">准备SD卡\u2026</string>
+
+    <string name="details_ok">好</string>
+    
+    <!-- Name of the button in the date/time picker to accept the date/time change -->
+    <string name="date_time_set">设置</string>
+    
+    <string name="amount">金额</string>
+    <string name="description">消费描述</string>
+    <string name="text_entry">快速记账</string>
+    
+</resources>
