@@ -1,2 +1,2 @@
-# projectA
-wwwork
+# Java projects in School
+
